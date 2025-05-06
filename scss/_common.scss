@@ -1,3 +1,26 @@
-body{
-     @apply bg-black text-white;
- }
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+::root{
+    --tw-aspect-w:16;
+    --tw-aspect-h:9;
+}
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  margin: 0;
+  line-height: inherit;
+}
+
+.article_img-left{
+    --tw-aspect-w:16;
+    --tw-aspect-h:9;
+    padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+};
+
+.my_container{
+    @apply lg:max-w-[1536px] md:px-8 sm:px-6 sm:max-w-[48rem] px-4 mx-auto max-w-[36rem];
+}
+
+.section_header{
+    @apply text-2xl font-medium pb-2.5 border-b border-[#d1d5dbb3] relative after:w-24 after:h-px after:absolute after:left-0 after:bottom-[-1px] after:bg-red-600;
+}
